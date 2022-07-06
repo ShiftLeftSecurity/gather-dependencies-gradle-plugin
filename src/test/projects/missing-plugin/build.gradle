@@ -1,0 +1,6 @@
+plugins {
+  id 'io.shiftleft.gather-dependencies'
+}
+
+gatherDependencies{
+}
