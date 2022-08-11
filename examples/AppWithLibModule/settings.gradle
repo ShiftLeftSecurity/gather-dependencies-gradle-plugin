@@ -9,5 +9,3 @@ dependencyResolutionManagement {
 rootProject.name = "AppWithLibModule"
 include ':lib'
 include ':app'
-include ':lib'
-include ':lib'
