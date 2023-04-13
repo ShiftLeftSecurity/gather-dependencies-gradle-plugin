@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "io.shiftleft"
-version = "0.5"
+version = "0.6"
 
 pluginBundle {
     website = "https://github.com/ShiftLeftSecurity/gather-dependencies-gradle-plugin"
@@ -27,7 +27,6 @@ dependencies {
     testImplementation("org.assertj:assertj-core:3.23.1")
     testImplementation(kotlin("test"))
     implementation(kotlin("stdlib"))
-    implementation("com.android.tools.build:gradle:4.0.0")
 }
 
 tasks.test {
