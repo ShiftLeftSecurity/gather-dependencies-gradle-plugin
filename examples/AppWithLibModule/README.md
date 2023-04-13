@@ -11,3 +11,12 @@ $ ./gradlew ':app:gatherDependencies'
 $ ls build/gatheredDependencies | grep 'jar$' | wc -l
 45
 ```
+
+### How to execute the Gradle Task for gathering dependencies (Plugin alternative)
+
+```
+$ gradle wrapper
+$ ./gradlew ':app:gatherDeps'
+$ ls build/gatheredDependencies | grep 'jar$' | wc -l
+45
+```
