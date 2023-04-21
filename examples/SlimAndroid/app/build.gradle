@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id('io.shiftleft.gather-dependencies') version '0.4'
+    id('io.shiftleft.gather-dependencies') version '0.5'
 }
 
 android {
