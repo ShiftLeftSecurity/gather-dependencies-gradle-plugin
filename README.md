@@ -73,7 +73,7 @@ gatherDependencies {
 2. Run `gatherDependencies` task for the _SlimAndroid_ test project:
 
 ```
-$ cd SlimAndroid
+$ cd examples/springboot-kotlin-webgoat
 $ gradle wrapper
 $ ./gradlew gatherDependencies
 $ find build/gatheredDependencies -name "*jar" | wc -l
