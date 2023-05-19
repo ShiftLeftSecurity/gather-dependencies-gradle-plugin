@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "io.shiftleft"
-version = "0.6"
+version = "0.7"
 
 pluginBundle {
     website = "https://github.com/ShiftLeftSecurity/gather-dependencies-gradle-plugin"

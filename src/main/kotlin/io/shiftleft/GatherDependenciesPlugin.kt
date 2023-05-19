@@ -18,6 +18,7 @@ class GatherDependenciesPlugin : Plugin<Project> {
     private lateinit var project: Project
 
     private val DEFAULT_OUTPUT_DIRECTORY_NAME = "gatheredDependencies"
+    private val DEFAULT_CONFIGURATION_NAME = "compileClasspath"
     private val PLUGIN_NAME = "GradleDependenciesPlugin"
     private val ROOT_TASK = "gatherDependencies"
 
@@ -44,7 +45,7 @@ class GatherDependenciesPlugin : Plugin<Project> {
         this.project = project
 
         project.afterEvaluate {
-            val configName = extension.configurationName.get()
+            val configName = extension.configurationName.getOrElse(DEFAULT_CONFIGURATION_NAME)
             this.configurations.all {
               if (this.name == configName) {
                 project.setupGatherDependenciesTasks(this.name)
